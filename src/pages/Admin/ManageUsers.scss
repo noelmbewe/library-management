@@ -1,0 +1,80 @@
+@import "../../App.scss"; // Ensure it inherits the main theme styles
+
+// Style the main container
+.big-container {
+  background-color: var(--bg-color-inverted);
+  color: var(--text-color-inverted);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: var(--light-shadow1);
+  margin: 30px auto;
+  max-width: 1200px;
+}
+
+// Page title styling
+h2 {
+  color: var(--xl-text-color);
+  font-family: var(--font-family-manrope);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+// Style the table
+.table {
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+// Table header
+.table thead {
+  background-color: var(--thead-bg-color);
+  color: var(--lg-text-color);
+}
+
+// Table rows
+.table tbody tr {
+  transition: var(--default-transition);
+  &:hover {
+    background-color: var(--side-link-hover-color);
+  }
+}
+
+// Buttons styling
+.button {
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: var(--default-transition);
+}
+
+// Edit button
+.btn-warning {
+    background-color: var(--orange-color);
+    &:hover {
+      background-color: var(--orange-color-dark);
+    }
+  }
+  
+
+// Delete button
+.btn-danger {
+  background-color: var(--red-color);
+  border: none;
+  &:hover {
+    background-color: var(--red-color); 
+  }
+}
+
+// Add new user button
+.add-user-btn {
+  background-color: var(--blue-color);
+  color: white;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: var(--default-transition);
+  &:hover {
+    background-color: var(--blue-color);
+  }
+}

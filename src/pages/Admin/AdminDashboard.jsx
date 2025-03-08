@@ -1,11 +1,13 @@
-import DashboardLayout from "../../layouts/DashboardLayout";
+import { AreaCards, AreaCharts, AreaTable, AreaTop } from "../../components/common";
 
 const AdminDashboard = () => {
   return (
-    <DashboardLayout>
-      <h1 className="text-3xl font-bold">Admin Dashboard</h1>
-      <p>Manage users and oversee the system.</p>
-    </DashboardLayout>
+    <div className="content-area">
+      <AreaTop />
+      <AreaCards />
+      <AreaCharts />
+      <AreaTable />
+    </div>
   );
 };
 
